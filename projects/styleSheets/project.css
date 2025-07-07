@@ -1,0 +1,48 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-images img:hover {
+    transform: scale(1.01);
+}
+
+.project-description {
+    text-align: left;
+    color: #222;
+}
+
+.project-description h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+body {
+    background-color: #f4f4f4;
+}

@@ -1,14 +1,17 @@
-/**Navigation design*/
 header {
-    background-color: #1a1a1a;
-    padding: 20px 0;
+    background: linear-gradient(90deg, #803c2c, #a44a35);
+    padding: 20px 0 10px;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    color: #f0f0f0;
+    color: #fff;
     margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -18,26 +21,29 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav a {
-    color: #f0f0f0;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
-    color: #00aced;
-    border-bottom: 2px solid #00aced;
+    color: #ffd9c9;
+    border-bottom: 2px solid #ffd9c9;
 }
+
 
 
 

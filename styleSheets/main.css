@@ -45,19 +45,18 @@ nav a:hover {
 }
 
 
-
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(90deg, #803c2c, #a44a35);
+    background: linear-gradient(90deg, #b46a56, #d48a74); /* daha açık degrade */
     color: #fff;
-    padding: 18px 10px;
+    padding: 16px 10px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
     z-index: 1000;
 }
 
@@ -73,7 +72,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffd9c9;
+    color: #ffe6df;  /* pastel hover rengi */
     transform: translateY(-2px);
 }
 

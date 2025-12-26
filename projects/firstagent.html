@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Assistant</title>
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="/styleSheets/project.css">
+</head>
+<body>
+    <header>
+        <h1>AI Agent Assistant</h1>
+        <nav aria-label="Main Menu">
+            <ul role="menubar" aria-label="Main Menu">
+                <li role="none"><a href="/index.html" role="menuitem" aria-label="Home">Home</a></li>
+                <li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">blog</a></li>
+                <li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li>
+                <li role="none"><a href="/travels.html" role="menuitem" aria-label="Travels">My Travels</a></li>
+                <li role="none"><a href="/about.html" role="menuitem" aria-label="About me">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/aiagent/aiagent.png" alt="AI Agent workflow diagram showing Telegram trigger, transcription, OpenAI model, memory, Gmail, and Google Calendar tools">
+            </div>
+
+            <div class="project-description">
+                <h2>Personal AI Assistant (Telegram + OpenAI)</h2>
+
+                <p>
+                    <strong>AI Agent Assistant</strong> is a beginner-level personal AI assistant workflow that I built to automate simple daily tasks through Telegram.
+                    The goal was to create a single assistant that can understand text and voice messages, respond intelligently, and perform basic productivity actions.
+                </p>
+
+                <p>
+                    The workflow starts with a <strong>Telegram Trigger</strong> that listens for incoming messages. A <strong>Switch</strong> step routes requests based on message type.
+                    Text messages are processed directly, while voice messages are first downloaded and then converted to text using a <strong>transcription</strong> step.
+                </p>
+
+                <p>
+                    After normalization in <strong>Edit Fields</strong>, the request is handled by an <strong>AI Agent</strong> connected to the <strong>OpenAI Chat Model (4o mini via API)</strong>.
+                    The agent then returns an answer back to Telegram as a text response.
+                </p>
+
+                <p>
+                    To make the assistant useful beyond chatting, I connected tool integrations:
+                    <strong>Gmail</strong> (read multiple messages and send emails) and <strong>Google Calendar</strong> (read events and create events).
+                    I also added <strong>Simple Memory</strong> to retain context, enabling more consistent and personalized interactions.
+                </p>
+
+                <p>
+                    This project is a foundation for expanding into more advanced capabilities like structured command handling, safer permission scopes, richer memory, and additional integrations.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footerContent">
+        <a href="mailto:furkansindar33@gmail.com" aria-label="Email me at furkansindar33@gmail.com">furkansindar33@gmail.com</a>
+        <a href="https://www.instagram.com/furkan_sindar/" target="_blank" aria-label="Follow me on instagram">
+            Instagram
+            <img src="/images/Instagram_icon.png" alt="Instagram icon">
+        </a>
+        <a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" aria-label="Follow me on linkedin">
+            Linkedin
+            <img src="/images/linkedin.png" alt="Linkedin icon">
+        </a>
+    </footer>
+</body>
+</html>

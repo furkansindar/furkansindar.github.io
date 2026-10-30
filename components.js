@@ -41,7 +41,7 @@
       langHref = '/tr/blog.html';
       langLabel = '🇹🇷 Türkçe';
     } else if (current.indexOf('/travels/') === 0) {
-      langHref = '/tr/travels.html';
+      langHref = '/tr' + current;
       langLabel = '🇹🇷 Türkçe';
     } else {
       langHref = '/tr/index.html';

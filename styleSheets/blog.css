@@ -1,10 +1,10 @@
 :root{
-  --bg: #fef6f2;
+  --bg: #f8fafc;
   --card: #fff;
   --ink: #2b2b2b;
   --muted: #555;
-  --primary: #803c2c;
-  --primary-600: #a44a35;
+  --primary: #1e293b;
+  --primary-600: #0f766e;
   --shadow: 0 6px 12px rgba(0,0,0,.06);
   --shadow-lg: 0 12px 24px rgba(0,0,0,.12);
   --radius: 14px;
@@ -28,7 +28,7 @@ main{
 
 .main-content{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 28px;
   align-items: stretch;
 }

@@ -1,15 +1,15 @@
 /* Theme */
 .home {
-  --brand: #803c2c;
-  --brand-2: #a44a35;
+  --brand: #1e293b;
+  --brand-2: #0f766e;
   --ink: #222;
   --muted: #555;
-  --paper: #fff9f6;
+  --paper: #f8fafc;
   --card: #ffffff;
-  --ring: rgba(128, 60, 44, 0.15);
+  --ring: rgba(15, 118, 110, 0.15);
 
-  background: radial-gradient(1200px 700px at 20% -10%, #ffe9e1, transparent),
-              radial-gradient(900px 600px at 90% 0%, #ffe0d7, transparent),
+  background: radial-gradient(1200px 700px at 20% -10%, #e0f2f1, transparent),
+              radial-gradient(900px 600px at 90% 0%, #e0f2fe, transparent),
               var(--paper);
   font-family: 'Segoe UI', sans-serif;
 }
@@ -38,7 +38,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,249,246,.96) 0%, rgba(255,249,246,.86) 48%, rgba(255,249,246,.25) 72%, rgba(255,249,246,0) 100%);
+  background: linear-gradient(90deg, rgba(248,250,252,.96) 0%, rgba(248,250,252,.86) 48%, rgba(248,250,252,.25) 72%, rgba(248,250,252,0) 100%);
 }
 .hero .intro {
   position: relative;
@@ -114,4 +114,13 @@
 @media (max-width: 640px) {
   .featured { grid-template-columns: 1fr; }
   .highlight-grid { grid-template-columns: 1fr; }
+}
+
+/* Phones: full light overlay so hero text stays readable on small screens */
+@media (max-width: 640px) {
+  .hero-banner { padding: 40px 5% 20px; min-height: 0; }
+  .hero-banner::after {
+    background: linear-gradient(180deg, rgba(248,250,252,.97) 0%, rgba(248,250,252,.82) 55%, rgba(248,250,252,.55) 100%);
+  }
+  .feature-card img { height: 180px; }
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Command Assistant (n8n + GPT-4)</title>
+    <link rel="stylesheet" href="/styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/project.css">
+</head>
+<body>
+    <header>
+        <h1>Voice Command Assistant</h1>
+        <nav aria-label="Main Menu">
+            <ul role="menubar" aria-label="Main Menu">
+                <li role="none"><a href="/index.html" role="menuitem" aria-label="Home">Home</a></li>
+                <li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">blog</a></li>
+                <li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li>
+                <li role="none"><a href="/travels.html" role="menuitem" aria-label="Travels">My Travels</a></li>
+                <li role="none"><a href="/about.html" role="menuitem" aria-label="About me">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/voiceassistant/voice-assistant.png" alt="Voice assistant illustration">
+            </div>
+
+            <div class="project-description">
+                <h2>Speak, and It Gets Done</h2>
+
+                <p>
+                    This assistant takes spoken instructions and turns them into actions. It is built with n8n for automation and GPT-4 for understanding what the user actually wants.
+                </p>
+
+                <p>
+                    The flow is simple on the surface: a voice command comes in, the model interprets the intent, and the workflow carries it out. One of the integrations is the Gmail API, so the assistant can manage email by voice.
+                </p>
+
+                <p>
+                    The interesting part is not the voice input itself, but the step after it: deciding which action matches the request, and executing it reliably instead of just answering in chat.
+                </p>
+
+                <p>
+                    This project, together with my Telegram AI assistant, is the foundation of my AI workflow automation work: agents that do things, not just say things.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footerContent">
+        <a href="mailto:furkansindar33@gmail.com" aria-label="Email me at furkansindar33@gmail.com">furkansindar33@gmail.com</a>
+        <a href="https://www.instagram.com/furkan_sindar/" target="_blank" aria-label="Follow me on instagram">
+            Instagram
+            <img src="/images/Instagram_icon.png" alt="Instagram icon">
+        </a>
+        <a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" aria-label="Follow me on linkedin">
+            Linkedin
+            <img src="/images/linkedin.png" alt="Linkedin icon">
+        </a>
+    </footer>
+</body>
+</html>

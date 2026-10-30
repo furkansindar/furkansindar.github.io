@@ -32,11 +32,34 @@
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
         '<div class="navbar-end lg:hidden">' +
           '<div class="dropdown dropdown-end">' +
-            '<button class="btn btn-ghost text-white" aria-label="Open menu">Menu</button>' +
+            '<button class="btn btn-outline text-white js-menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>' +
             '<ul tabindex="0" class="menu menu-sm dropdown-content bg-slate-800 rounded-box z-10 mt-3 w-52 p-2 shadow gap-1">' + items + '</ul>' +
           '</div>' +
         '</div>' +
       '</div>';
+    // Touch-friendly menu: Daisy dropdowns rely on focus, which is flaky on
+    // mobile Safari, so toggle it with a real click handler instead.
+    var menuBtn = nav.querySelector('.js-menu-btn');
+    var dropdown = nav.querySelector('.dropdown');
+    if (menuBtn && dropdown) {
+      menuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = dropdown.classList.toggle('dropdown-open');
+        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      dropdown.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          dropdown.classList.remove('dropdown-open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+      document.addEventListener('click', function (e) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('dropdown-open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
   }
 
   if (footer) {

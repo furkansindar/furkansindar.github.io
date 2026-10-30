@@ -3,206 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travels</title>
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/travels.css">
+    <title>Travels</title>    <link rel="stylesheet" href="styleSheets/tailwind.css">
 </head>
-<body>
+<body class="bg-base-200 text-slate-700 font-sans">
     <a class="skip-link" href="#mainContent">Skip to main content</a>
-    <header>
-        <h1>Travels</h1>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Travels</h1>
         <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/index.html" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
     </header>
-    <main id="mainContent">
-        <div class="main-content">
-          <div class="content">
-            <div class="text">
-                <h2>Halloween Astronaut Night</h2>
-                <p>We dressed up as astronauts and fully lived the Halloween spirit with friends. Even our dog joined the “space mission,” making the night unforgettable with laughs, photos, and memories.</p>
-            </div>
-            <div class="image">
-                <a href="/travels/nasa.html">
-                  <img src="travels/Travelsimage/nasa/nasa1.jpeg" width="1200" height="1600" alt="Halloween astronaut costumes with friends" />
-                </a>
-            </div>
-                <a href="/travels/nasa.html" class="read-more">Read More</a>
-            </div>
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/nasa.html"><img class="w-full h-56 object-cover" src="travels/Travelsimage/nasa/nasa1.jpeg" width="1200" height="1600" alt="Halloween astronaut costumes with friends" /></a></figure><div class="card-body"><h2 class="card-title">Halloween Astronaut Night</h2><p>We dressed up as astronauts and fully lived the Halloween spirit with friends. Even our dog joined the “space mission,” making the night unforgettable with laughs, photos, and memories.</p><div class="card-actions justify-end"><a href="/travels/nasa.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
 
-            <div class="content">
-                <div class="text">
-                    <h2>Seattle Road Trip</h2>
-                    <p>We made a 28-hour road trip from Wisconsin to Seattle in a rented minivan, just three months after arriving in the U.S. It was a spontaneous decision inspired by a YouTuber we all followed, and it turned out to be one of our most unforgettable adventures.</p>
-                </div>
-                <div class="image">
-                    <a href="/travels/seattle.html">
-                        <img loading="lazy" src="travels/Travelsimage/Seattle/Seattle3.jpeg" width="1200" height="1600" alt="Seattle road trip with friends">
-                    </a>
-                </div>
-                <a href="/travels/seattle.html" class="read-more">Read More</a>
-            </div>
-             <div class="content">
-            <div class="text">
-                <h2>Bucks vs Lakers Game Night</h2>
-                <p>My girlfriend surprised me with NBA tickets to see the Bucks take on the Lakers. It was a dream come true to watch LeBron James play live and support our home team in an unforgettable game night experience.</p>
-            </div>
-            <div class="image">
-                <a href="/travels/bucks-vs-lakers.html">
-                    <img loading="lazy" src="travels/Travelsimage/bucksvsla/bucks4.jpeg" width="1200" height="1600" alt="Watching Bucks vs Lakers at the stadium">
-                </a>
-            </div>
-            <a href="/travels/bucks-vs-lakers.html" class="read-more">Read More</a>
-        </div>
-        <div class="content">
-                <div class="text">
-                    <h2>Valentine’s Day in Chicago</h2>
-                    <p>We celebrated our first Valentine’s Day in the heart of Chicago. From rooftop views and Naruto fan moments to Korean BBQ and Turkish cuisine, this trip was packed with surprises, laughter, and culture.</p>
-                </div>
-                <div class="image">
-                    <a href="/travels/chicago.html">
-                        <img loading="lazy" src="travels/Travelsimage/chicago/chicago1.jpeg" width="1200" height="1600" alt="View from hotel room in downtown Chicago" />
-                    </a>
-                </div>
-                <a href="/travels/chicago.html" class="read-more">Read More</a>
-            </div>
-            <div class="content">
-    <div class="text">
-        <h2>Niagara Falls Detour</h2>
-        <p>On our way to New York, we made a spontaneous 3-hour detour to Niagara Falls. It turned into one of the most powerful and memorable nature experiences of our journey — standing between two countries, soaked under the roar of the falls.</p>
-    </div>
-    <div class="image">
-        <a href="/travels/niagara.html">
-            <img loading="lazy" src="travels/Travelsimage/niagara/niagara3.jpeg" width="1200" height="1600" alt="Niagara Falls boat tour in blue ponchos">
-        </a>
-    </div>
-    <a href="/travels/niagara.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-    <div class="text">
-        <h2>New York City Adventure</h2>
-        <p>From a helicopter ride above the Statue of Liberty to exploring Times Square and tasting iconic New York pizza, this trip was a thrilling dive into the heart of the Big Apple.</p>
-    </div>
-    <div class="image">
-        <a href="/travels/newyork.html">
-            <img loading="lazy" src="travels/Travelsimage/newyork/newyork4.jpeg" width="1200" height="1600" alt="Exploring Times Square at night" />
-        </a>
-    </div>
-    <a href="/travels/newyork.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-    <div class="text">
-    <h2>First Hike at Devils Lake</h2>
-    <p>A golden autumn hike to Devils Door through clean trails, crisp air, and stunning views. My first visit to Devils Lake became an unforgettable nature adventure.</p>
-    </div>
-    <div class="image">
-    <a href="/travels/devils-lake.html">
-      <img loading="lazy" src="travels/Travelsimage/devils1/devils2.jpeg" width="1200" height="1600" alt="Devils Door rock at Devils Lake">
-    </a>
-    </div>
-    <a href="/travels/devils-lake.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-  <div class="text">
-    <h2>WWE SmackDown Night</h2>
-    <p>My friend Leo and I, both huge wrestling fans, went to see WWE SmackDown in Milwaukee. It was a dream come true to watch my childhood hero John Cena live. The night was filled with excitement, memories, and Cena’s iconic “Never Give Up” spirit.</p>
-  </div>
-    <div class="image">
-    <a href="/travels/smackdown.html">
-      <img loading="lazy" src="travels/Travelsimage/smackdown/smackdown4.jpeg" width="1600" height="1200" alt="WWE Smackdown arena and crowd" />
-    </a>
-    </div>
-    <a href="/travels/smackdown.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-  <div class="text">
-    <h2>Houston Rockets vs Bucks</h2>
-    <p>It was already exciting to see Alperen Şengün, the only Turkish player in the NBA, visit our state—but the night became legendary when we also got a chance to meet Acun Ilıcalı and Survivor stars. With our flags and signs ready, we cheered loud and proud. Bucks won, and we went home with memories for a lifetime.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/bucks-vs-rockets.html">
-      <img loading="lazy" src="travels/Travelsimage/houstanvsbucks/bucks3.jpeg" width="1200" height="1599" alt="Holding Turkish flag at the game" />
-    </a>
-  </div>
-  <a href="/travels/bucks-vs-rockets.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-  <div class="text">
-    <h2>Real Madrid vs Milan in Chicago</h2>
-    <p>As a devoted Fenerbahçe fan, seeing Arda Güler shine at Real Madrid is a dream come true. When we heard Madrid would face Milan in Chicago, we grabbed our tickets right away. Holding our Turkish flags and cheering for Arda in a massive stadium was emotional, powerful, and unforgettable.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/madrid.html">
-      <img loading="lazy" src="travels/Travelsimage/madridmilan/madrid1.jpeg" width="1200" height="1600" alt="Holding Turkish flag at Real Madrid game" />
-    </a>
-  </div>
-  <a href="/travels/madrid.html" class="read-more">Read More</a>
-    </div>
-    <div class="content">
-  <div class="text">
-    <h2>Cabin Weekend at Wild Rose</h2>
-    <p>What started as a spontaneous invite turned into a cozy cabin getaway filled with forest hikes, Filipino seafood feasts, and dog-friendly lake swims. It was a peaceful escape to nature, shared with friends, our pup Wynter, and a grill full of burgers!</p>
-  </div>
-  <div class="image">
-    <a href="/travels/cabin.html">
-      <img loading="lazy" src="travels/Travelsimage/cabin/cabin4.jpeg" width="1320" height="1632" alt="At the lake with our dog Wynter" />
-    </a>
-  </div>
-  <a href="/travels/cabin.html" class="read-more">Read More</a>
-  </div>
-  <div class="content">
-  <div class="text">
-    <h2>Halloween in Madison</h2>
-    <p>For my third Halloween in the U.S., I finally decided to embrace the tradition and join in costume. With my friends equally excited, we formed the perfect Mario-themed group — including our dog Wynter dressed as Pennywise! A fun night full of laughter, memories, and even a costume contest.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/halloween.html">
-      <img loading="lazy" src="travels/Travelsimage/hallowen/hallowen1.jpeg" width="1200" height="1600" alt="Mario Halloween costume with dog" />
-    </a>
-  </div>
-  <a href="/travels/halloween.html" class="read-more">Read More</a>
-</div>
-<div class="content">
-  <div class="text">
-    <h2>Bucks vs Rockets II</h2>
-    <p>It’s now a yearly tradition for us to watch the Bucks live — and when we heard Turkish star Alperen Şengün was coming back with the Rockets, we didn’t hesitate to grab tickets. From pre-game burgers to signed hats and intense moments on the court, it was a night to remember.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/bucks-vs-rockets-ii.html">
-      <img loading="lazy" src="travels/Travelsimage/buckshouston2/bucks2.jpeg" width="900" height="1599" alt="Selfie at Bucks vs Rockets game" />
-    </a>
-  </div>
-  <a href="/travels/bucks-vs-rockets-ii.html" class="read-more">Read More</a>
-</div>
-<div class="content">
-  <div class="text">
-    <h2>Christmas Celebration</h2>
-    <p>Even though we didn’t grow up celebrating Christmas, this year felt magical — thanks to my girlfriend who made sure we embraced the holiday spirit. From snow on Christmas morning to fun games and thoughtful gifts, it became one of the most unforgettable holidays I’ve ever experienced.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/christmas.html">
-      <img loading="lazy" src="travels/Travelsimage/christmascelebration/christmas1.jpeg" width="1200" height="1600" alt="Wearing matching Christmas pajamas and celebrating" />
-    </a>
-  </div>
-  <a href="/travels/christmas.html" class="read-more">Read More</a>
-</div>
-<div class="content">
-  <div class="text">
-    <h2>Devils Door With My Dog and Friends</h2>
-    <p>My friends had never been to Devils Lake before, which surprised me — so we made a plan right away. This time, my dog Wynter joined us. Despite being a house dog, she led the trail like a pro. It was a first hike for most of them, and they were amazed when I brought them to Devils Door. We ended the day with pizza and happy memories.</p>
-  </div>
-  <div class="image">
-    <a href="/travels/devils-lake-ii.html">
-      <img loading="lazy" src="travels/Travelsimage/devils II/devils2.jpeg" width="1200" height="1600" alt="Dog Wynter posing on Devils Lake hike" />
-    </a>
-  </div>
-  <a href="/travels/devils-lake-ii.html" class="read-more">Read More</a>
-</div>
+            <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/seattle.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/Seattle/Seattle3.jpeg" width="1200" height="1600" alt="Seattle road trip with friends"></a></figure><div class="card-body"><h2 class="card-title">Seattle Road Trip</h2><p>We made a 28-hour road trip from Wisconsin to Seattle in a rented minivan, just three months after arriving in the U.S. It was a spontaneous decision inspired by a YouTuber we all followed, and it turned out to be one of our most unforgettable adventures.</p><div class="card-actions justify-end"><a href="/travels/seattle.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+             <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/bucks-vs-lakers.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/bucksvsla/bucks4.jpeg" width="1200" height="1600" alt="Watching Bucks vs Lakers at the stadium"></a></figure><div class="card-body"><h2 class="card-title">Bucks vs Lakers Game Night</h2><p>My girlfriend surprised me with NBA tickets to see the Bucks take on the Lakers. It was a dream come true to watch LeBron James play live and support our home team in an unforgettable game night experience.</p><div class="card-actions justify-end"><a href="/travels/bucks-vs-lakers.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+        <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/chicago.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/chicago/chicago1.jpeg" width="1200" height="1600" alt="View from hotel room in downtown Chicago" /></a></figure><div class="card-body"><h2 class="card-title">Valentine’s Day in Chicago</h2><p>We celebrated our first Valentine’s Day in the heart of Chicago. From rooftop views and Naruto fan moments to Korean BBQ and Turkish cuisine, this trip was packed with surprises, laughter, and culture.</p><div class="card-actions justify-end"><a href="/travels/chicago.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+            <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/niagara.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/niagara/niagara3.jpeg" width="1200" height="1600" alt="Niagara Falls boat tour in blue ponchos"></a></figure><div class="card-body"><h2 class="card-title">Niagara Falls Detour</h2><p>On our way to New York, we made a spontaneous 3-hour detour to Niagara Falls. It turned into one of the most powerful and memorable nature experiences of our journey — standing between two countries, soaked under the roar of the falls.</p><div class="card-actions justify-end"><a href="/travels/niagara.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/newyork.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/newyork/newyork4.jpeg" width="1200" height="1600" alt="Exploring Times Square at night" /></a></figure><div class="card-body"><h2 class="card-title">New York City Adventure</h2><p>From a helicopter ride above the Statue of Liberty to exploring Times Square and tasting iconic New York pizza, this trip was a thrilling dive into the heart of the Big Apple.</p><div class="card-actions justify-end"><a href="/travels/newyork.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/devils-lake.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/devils1/devils2.jpeg" width="1200" height="1600" alt="Devils Door rock at Devils Lake"></a></figure><div class="card-body"><h2 class="card-title">First Hike at Devils Lake</h2><p>A golden autumn hike to Devils Door through clean trails, crisp air, and stunning views. My first visit to Devils Lake became an unforgettable nature adventure.</p><div class="card-actions justify-end"><a href="/travels/devils-lake.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/smackdown.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/smackdown/smackdown4.jpeg" width="1600" height="1200" alt="WWE Smackdown arena and crowd" /></a></figure><div class="card-body"><h2 class="card-title">WWE SmackDown Night</h2><p>My friend Leo and I, both huge wrestling fans, went to see WWE SmackDown in Milwaukee. It was a dream come true to watch my childhood hero John Cena live. The night was filled with excitement, memories, and Cena’s iconic “Never Give Up” spirit.</p><div class="card-actions justify-end"><a href="/travels/smackdown.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/bucks-vs-rockets.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/houstanvsbucks/bucks3.jpeg" width="1200" height="1599" alt="Holding Turkish flag at the game" /></a></figure><div class="card-body"><h2 class="card-title">Houston Rockets vs Bucks</h2><p>It was already exciting to see Alperen Şengün, the only Turkish player in the NBA, visit our state—but the night became legendary when we also got a chance to meet Acun Ilıcalı and Survivor stars. With our flags and signs ready, we cheered loud and proud. Bucks won, and we went home with memories for a lifetime.</p><div class="card-actions justify-end"><a href="/travels/bucks-vs-rockets.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/madrid.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/madridmilan/madrid1.jpeg" width="1200" height="1600" alt="Holding Turkish flag at Real Madrid game" /></a></figure><div class="card-body"><h2 class="card-title">Real Madrid vs Milan in Chicago</h2><p>As a devoted Fenerbahçe fan, seeing Arda Güler shine at Real Madrid is a dream come true. When we heard Madrid would face Milan in Chicago, we grabbed our tickets right away. Holding our Turkish flags and cheering for Arda in a massive stadium was emotional, powerful, and unforgettable.</p><div class="card-actions justify-end"><a href="/travels/madrid.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+    <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/cabin.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/cabin/cabin4.jpeg" width="1320" height="1632" alt="At the lake with our dog Wynter" /></a></figure><div class="card-body"><h2 class="card-title">Cabin Weekend at Wild Rose</h2><p>What started as a spontaneous invite turned into a cozy cabin getaway filled with forest hikes, Filipino seafood feasts, and dog-friendly lake swims. It was a peaceful escape to nature, shared with friends, our pup Wynter, and a grill full of burgers!</p><div class="card-actions justify-end"><a href="/travels/cabin.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+  <article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/halloween.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/hallowen/hallowen1.jpeg" width="1200" height="1600" alt="Mario Halloween costume with dog" /></a></figure><div class="card-body"><h2 class="card-title">Halloween in Madison</h2><p>For my third Halloween in the U.S., I finally decided to embrace the tradition and join in costume. With my friends equally excited, we formed the perfect Mario-themed group — including our dog Wynter dressed as Pennywise! A fun night full of laughter, memories, and even a costume contest.</p><div class="card-actions justify-end"><a href="/travels/halloween.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/bucks-vs-rockets-ii.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/buckshouston2/bucks2.jpeg" width="900" height="1599" alt="Selfie at Bucks vs Rockets game" /></a></figure><div class="card-body"><h2 class="card-title">Bucks vs Rockets II</h2><p>It’s now a yearly tradition for us to watch the Bucks live — and when we heard Turkish star Alperen Şengün was coming back with the Rockets, we didn’t hesitate to grab tickets. From pre-game burgers to signed hats and intense moments on the court, it was a night to remember.</p><div class="card-actions justify-end"><a href="/travels/bucks-vs-rockets-ii.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/christmas.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/christmascelebration/christmas1.jpeg" width="1200" height="1600" alt="Wearing matching Christmas pajamas and celebrating" /></a></figure><div class="card-body"><h2 class="card-title">Christmas Celebration</h2><p>Even though we didn’t grow up celebrating Christmas, this year felt magical — thanks to my girlfriend who made sure we embraced the holiday spirit. From snow on Christmas morning to fun games and thoughtful gifts, it became one of the most unforgettable holidays I’ve ever experienced.</p><div class="card-actions justify-end"><a href="/travels/christmas.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/travels/devils-lake-ii.html"><img class="w-full h-56 object-cover" loading="lazy" src="travels/Travelsimage/devils II/devils2.jpeg" width="1200" height="1600" alt="Dog Wynter posing on Devils Lake hike" /></a></figure><div class="card-body"><h2 class="card-title">Devils Door With My Dog and Friends</h2><p>My friends had never been to Devils Lake before, which surprised me — so we made a plan right away. This time, my dog Wynter joined us. Despite being a house dog, she led the trail like a pro. It was a first hike for most of them, and they were amazed when I brought them to Devils Door. We ended the day with pizza and happy memories.</p><div class="card-actions justify-end"><a href="/travels/devils-lake-ii.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
 
 
 
 
         </div>
     </main>
-    <footer id="site-footer"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
     <script src="/components.js" defer></script>
 </body>
 </html>

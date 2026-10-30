@@ -1,5 +1,5 @@
-/* Shared site components: navigation and footer.
-   Every page includes this file once, so the header nav and footer
+/* Shared site components: navigation and footer, now DaisyUI.
+   Every page includes this file once, so the nav and footer
    live in exactly one place instead of being copied into 40+ pages.
    Loaded with defer, so the DOM is ready when this runs. */
 
@@ -20,18 +20,32 @@
     var current = window.location.pathname;
     if (current === '/') current = '/index.html';
     var items = links.map(function (link) {
-      var isCurrent = current === link.href ? ' aria-current="page"' : '';
-      return '<li role="none"><a href="' + link.href + '" role="menuitem" aria-label="' + link.label + '"' + isCurrent + '>' + link.label + '</a></li>';
+      var active = current === link.href;
+      var cls = active ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm text-white';
+      var aria = active ? ' aria-current="page"' : '';
+      return '<li><a href="' + link.href + '" class="' + cls + '"' + aria + '>' + link.label + '</a></li>';
     }).join('');
-    nav.innerHTML = '<ul role="menubar" aria-label="Main Menu">' + items + '</ul>';
+    nav.className = 'w-full';
+    nav.innerHTML =
+      '<div class="navbar bg-slate-800 text-white shadow-lg px-4">' +
+        '<div class="navbar-start"><a href="/index.html" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
+        '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
+        '<div class="navbar-end lg:hidden">' +
+          '<div class="dropdown dropdown-end">' +
+            '<div tabindex="0" role="button" class="btn btn-ghost text-white" aria-label="Open menu">Menu</div>' +
+            '<ul tabindex="0" class="menu menu-sm dropdown-content bg-slate-800 rounded-box z-10 mt-3 w-52 p-2 shadow gap-1">' + items + '</ul>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
   }
 
   if (footer) {
+    footer.className = 'footer bg-slate-800 text-white items-center p-6 mt-12 justify-center gap-4';
     footer.innerHTML =
-      '<a href="mailto:furkansindar33@gmail.com" aria-label="Email me at furkansindar33@gmail.com">furkansindar33@gmail.com</a>' +
-      '<a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener" aria-label="Follow me on instagram">Instagram' +
-      '<img src="/images/Instagram_icon.png" alt="Instagram icon"></a>' +
-      '<a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener" aria-label="Follow me on linkedin">Linkedin' +
-      '<img src="/images/linkedin.png" alt="Linkedin icon"></a>';
+      '<a href="mailto:furkansindar33@gmail.com" class="link link-hover text-white">furkansindar33@gmail.com</a>' +
+      '<a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener" class="link link-hover text-white inline-flex items-center gap-2">Instagram' +
+      '<img src="/images/Instagram_icon.png" alt="Instagram icon" width="20" height="20"></a>' +
+      '<a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener" class="link link-hover text-white inline-flex items-center gap-2">Linkedin' +
+      '<img src="/images/linkedin.png" alt="Linkedin icon" width="20" height="20"></a>';
   }
 })();

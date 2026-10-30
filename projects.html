@@ -3,90 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Furkan Sindar</title>
-    <link rel="stylesheet" href="styleSheets/main.css">
-    <link rel="stylesheet" href="styleSheets/projects.css">
+    <title>Projects | Furkan Sindar</title>    <link rel="stylesheet" href="styleSheets/tailwind.css">
 </head>
-<body>
+<body class="bg-base-200 text-slate-700 font-sans">
     <a class="skip-link" href="#mainContent">Skip to main content</a>
-    <header>
-        <h1>Projects</h1>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Projects</h1>
         <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/index.html" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
     </header>
-    <main id="mainContent">
-        <div class="main-content">
-            <h2 class="section-heading">Selected Projects</h2>
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl">
+            <h2 class="text-2xl font-bold mt-10 mb-4">Selected Projects</h2>
 
-            <div class="content">
-            <div class="text">
-                <h2>Sip Success Online</h2>
-                <p>An accessible, culturally aware website for my own bubble tea business in the Philippines, built with input from the Wisconsin Council of the Blind. It won 1st place at the 2024 Honors Competition, earned the Honors Medallion, and was presented at the 2025 Upper Midwest Honors Conference in Minneapolis.</p>
-                <p class="tags">Web Development &middot; Accessibility &middot; HTML/CSS/JavaScript</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/projects/SipSuccess.html"><img class="w-full h-56 object-cover" src="images/honorpresentation.jpeg" width="1440" height="1920" alt="sip success online project presentation"></a></figure><div class="card-body"><h2 class="card-title">Sip Success Online</h2><p>An accessible, culturally aware website for my own bubble tea business in the Philippines, built with input from the Wisconsin Council of the Blind. It won 1st place at the 2024 Honors Competition, earned the Honors Medallion, and was presented at the 2025 Upper Midwest Honors Conference in Minneapolis.</p><div class="flex flex-wrap gap-2"><span class="badge badge-outline">Web Development</span><span class="badge badge-outline">Accessibility</span><span class="badge badge-outline">HTML/CSS/JavaScript</span></div><div class="card-actions justify-end"><a href="/projects/SipSuccess.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/projects/inborn.html"><img class="w-full h-56 object-cover" src="projects/projectsimages/inborn/inborn-ev.png" width="1920" height="1280" loading="lazy" alt="EV web app dashboard illustration"></a></figure><div class="card-body"><h2 class="card-title">AI-Powered EV Web App, Inborn GT Fellowship</h2><p>Product Manager for a cross-functional fellow team building an AI-powered EV web app for a simulated NYC dealership's EV division, from discovery through deployment over a 14-week cycle.</p><div class="flex flex-wrap gap-2"><span class="badge badge-outline">Product Management</span><span class="badge badge-outline">AI Product</span><span class="badge badge-outline">Figma</span><span class="badge badge-outline">Asana</span></div><div class="card-actions justify-end"><a href="/projects/inborn.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/projects/voiceassistant.html"><img class="w-full h-56 object-cover" src="/projects/projectsimages/voiceassistant/voice-assistant.png" width="1920" height="1280" loading="lazy" alt="Voice assistant illustration"></a></figure><div class="card-body"><h2 class="card-title">Voice Command Assistant (n8n + GPT-4)</h2><p>A voice-command automation assistant built with n8n and GPT-4 that takes spoken instructions and acts on them, including managing email through the Gmail API.</p><div class="flex flex-wrap gap-2"><span class="badge badge-outline">Automation</span><span class="badge badge-outline">n8n</span><span class="badge badge-outline">GPT-4</span><span class="badge badge-outline">Gmail API</span></div><div class="card-actions justify-end"><a href="/projects/voiceassistant.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/projects/firstagent.html"><img class="w-full h-56 object-cover" src="/projects/projectsimages/aiagent/aiagent.png" width="1406" height="611" loading="lazy" alt="AI Agent workflow diagram showing Telegram trigger, transcription, OpenAI model, memory, Gmail, and Google Calendar tools"></a></figure><div class="card-body"><h2 class="card-title">AI Agent Assistant (Telegram + OpenAI)</h2><p>A personal AI assistant connected to OpenAI (4o mini via API) and deployed through Telegram. It supports both text and voice inputs (with transcription), and can perform basic productivity actions using Gmail and Google Calendar integrations with simple memory.</p><div class="flex flex-wrap gap-2"><span class="badge badge-outline">AI Agents</span><span class="badge badge-outline">Telegram</span><span class="badge badge-outline">OpenAI API</span><span class="badge badge-outline">Gmail &amp; Calendar</span></div><div class="card-actions justify-end"><a href="/projects/firstagent.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
             </div>
-            <div class="image"><a href="/projects/SipSuccess.html">
-                <img src="images/honorpresentation.jpeg" width="1440" height="1920"
-                    alt="sip success online project presentation">
-            </a></div>
-            <a href="/projects/SipSuccess.html" class="read-more">Read More</a>
-            </div>
+            <h2 class="text-2xl font-bold mt-10 mb-4">Leadership &amp; Community</h2>
 
-            <div class="content">
-            <div class="text">
-                <h2>AI-Powered EV Web App, Inborn GT Fellowship</h2>
-                <p>Product Manager for a cross-functional fellow team building an AI-powered EV web app for a simulated NYC dealership's EV division, from discovery through deployment over a 14-week cycle.</p>
-                <p class="tags">Product Management &middot; AI Product &middot; Figma &middot; Asana</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<article class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden"><figure><a href="/projects/ImYourSenator.html"><img class="w-full h-56 object-cover" src="projects/projectsimages/iamyoursenator/FurkanFlyer.jpg" width="1035" height="1600" loading="lazy" alt="I Am Your Senator flyer"></a></figure><div class="card-body"><h2 class="card-title">I Am Your Senator</h2><p>Born at the NACA Student Government Institute: personalized flyers with photos and QR codes linking to senators' blogs, pages, and emails, lowering the barrier between students and their representatives. Adopted by the Public Relations Committee and Executive Council as a permanent initiative.</p><div class="flex flex-wrap gap-2"><span class="badge badge-outline">Student Government</span><span class="badge badge-outline">Advocacy</span></div><div class="card-actions justify-end"><a href="/projects/ImYourSenator.html" class="btn btn-primary btn-sm">Read More</a></div></div></article>
             </div>
-            <div class="image"><a href="/projects/inborn.html">
-                <img src="projects/projectsimages/inborn/inborn-ev.png" width="1920" height="1280" loading="lazy"
-                    alt="EV web app dashboard illustration">
-            </a></div>
-            <a href="/projects/inborn.html" class="read-more">Read More</a>
-            </div>
-
-            <div class="content">
-            <div class="text">
-                <h2>Voice Command Assistant (n8n + GPT-4)</h2>
-                <p>A voice-command automation assistant built with n8n and GPT-4 that takes spoken instructions and acts on them, including managing email through the Gmail API.</p>
-                <p class="tags">Automation &middot; n8n &middot; GPT-4 &middot; Gmail API</p>
-            </div>
-            <div class="image"><a href="/projects/voiceassistant.html">
-                <img src="/projects/projectsimages/voiceassistant/voice-assistant.png" width="1920" height="1280" loading="lazy"
-                    alt="Voice assistant illustration">
-            </a></div>
-            <a href="/projects/voiceassistant.html" class="read-more">Read More</a>
-            </div>
-
-            <div class="content">
-            <div class="text">
-                <h2>AI Agent Assistant (Telegram + OpenAI)</h2>
-                <p>A personal AI assistant connected to OpenAI (4o mini via API) and deployed through Telegram. It supports both text and voice inputs (with transcription), and can perform basic productivity actions using Gmail and Google Calendar integrations with simple memory.</p>
-                <p class="tags">AI Agents &middot; Telegram &middot; OpenAI API &middot; Gmail &amp; Calendar</p>
-            </div>
-            <div class="image"><a href="/projects/firstagent.html">
-                <img src="/projects/projectsimages/aiagent/aiagent.png" width="1406" height="611" loading="lazy"
-                    alt="AI Agent workflow diagram showing Telegram trigger, transcription, OpenAI model, memory, Gmail, and Google Calendar tools">
-            </a></div>
-            <a href="/projects/firstagent.html" class="read-more">Read More</a>
-            </div>
-
-            <h2 class="section-heading">Leadership &amp; Community</h2>
-
-            <div class="content">
-            <div class="text">
-                <h2>I Am Your Senator</h2>
-                <p>Born at the NACA Student Government Institute: personalized flyers with photos and QR codes linking to senators' blogs, pages, and emails, lowering the barrier between students and their representatives. Adopted by the Public Relations Committee and Executive Council as a permanent initiative.</p>
-                <p class="tags">Student Government &middot; Advocacy</p>
-            </div>
-            <div class="image"><a href="/projects/ImYourSenator.html">
-                <img src="projects/projectsimages/iamyoursenator/FurkanFlyer.jpg" width="1035" height="1600" loading="lazy"
-                    alt="I Am Your Senator flyer">
-            </a></div>
-            <a href="/projects/ImYourSenator.html" class="read-more">Read More</a>
-            </div>
-
-        </div>
     </main>
-    <footer id="site-footer"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
     <script src="/components.js" defer></script>
 </body>
 </html>

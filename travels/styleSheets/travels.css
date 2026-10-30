@@ -37,7 +37,7 @@
 .article-description h2 {
     font-size: 26px;
     margin-bottom: 15px;
-    color: #803c2c;
+    color: #1e293b;
 }
 
 .article-description p {
@@ -45,4 +45,10 @@
     line-height: 1.7;
     color: #444;
     margin-bottom: 15px;
+}
+
+.content { box-sizing: border-box; }
+@media (max-width: 480px) {
+  .content { width: 100%; max-width: 340px; }
+  main { padding: 32px 4%; }
 }

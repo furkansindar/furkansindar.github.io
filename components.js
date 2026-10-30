@@ -25,37 +25,35 @@
       var aria = active ? ' aria-current="page"' : '';
       return '<li><a href="' + link.href + '" class="' + cls + '"' + aria + '>' + link.label + '</a></li>';
     }).join('');
+    var mobileItems = links.map(function (link) {
+      var active = current === link.href;
+      var cls = active ? 'block px-4 py-3 rounded-lg bg-teal-700 text-white font-semibold' : 'block px-4 py-3 rounded-lg text-white hover:bg-slate-700';
+      var aria = active ? ' aria-current="page"' : '';
+      return '<a href="' + link.href + '" class="' + cls + '"' + aria + '>' + link.label + '</a>';
+    }).join('');
     nav.className = 'w-full';
     nav.innerHTML =
       '<div class="navbar bg-slate-800 text-white shadow-lg px-4">' +
         '<div class="navbar-start"><a href="/index.html" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
-        '<div class="navbar-end lg:hidden">' +
-          '<div class="dropdown dropdown-end">' +
-            '<button class="btn btn-outline text-white js-menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>' +
-            '<ul tabindex="0" class="menu menu-sm dropdown-content bg-slate-800 rounded-box z-10 mt-3 w-52 p-2 shadow gap-1">' + items + '</ul>' +
-          '</div>' +
+        '<div class="navbar-end lg:hidden relative">' +
+          '<button class="btn btn-outline text-white js-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>' +
+          '<div id="mobile-menu" class="hidden absolute right-0 top-full mt-2 w-56 bg-slate-800 rounded-box shadow-xl p-2 z-50">' + mobileItems + '</div>' +
         '</div>' +
       '</div>';
-    // Touch-friendly menu: Daisy dropdowns rely on focus, which is flaky on
-    // mobile Safari, so toggle it with a real click handler instead.
+    // Plain JS menu, no Daisy dropdown CSS involved: the focus-based
+    // dropdown kept failing on mobile Safari, so this toggles hidden/block.
     var menuBtn = nav.querySelector('.js-menu-btn');
-    var dropdown = nav.querySelector('.dropdown');
-    if (menuBtn && dropdown) {
+    var mobileMenu = nav.querySelector('#mobile-menu');
+    if (menuBtn && mobileMenu) {
       menuBtn.addEventListener('click', function (e) {
         e.stopPropagation();
-        var open = dropdown.classList.toggle('dropdown-open');
-        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      dropdown.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          dropdown.classList.remove('dropdown-open');
-          menuBtn.setAttribute('aria-expanded', 'false');
-        });
+        var hidden = mobileMenu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
       });
       document.addEventListener('click', function (e) {
-        if (!dropdown.contains(e.target)) {
-          dropdown.classList.remove('dropdown-open');
+        if (!mobileMenu.contains(e.target) && e.target !== menuBtn) {
+          mobileMenu.classList.add('hidden');
           menuBtn.setAttribute('aria-expanded', 'false');
         }
       });

@@ -8,28 +8,40 @@
   var footer = document.getElementById('site-footer');
   if (!nav && !footer) return;
 
-  var links = [
-    { href: '/index.html', label: 'Home' },
-    { href: '/blog.html', label: 'Blog' },
-    { href: '/projects.html', label: 'Projects' },
-    { href: '/travels.html', label: 'My Travels' },
-    { href: '/about.html', label: 'About Me' }
-  ];
-
   if (nav) {
     var current = window.location.pathname;
     if (current === '/') current = '/index.html';
+    var isTrPage = current.indexOf('/tr/') === 0;
+    // Nav labels: Turkish on tr/ pages, English elsewhere.
+    var links = isTrPage ? [
+      { href: '/tr/index.html', label: 'Anasayfa' },
+      { href: '/tr/blog.html', label: 'Blog' },
+      { href: '/tr/projects.html', label: 'Projeler' },
+      { href: '/tr/travels.html', label: 'Gezilerim' },
+      { href: '/tr/about.html', label: 'Hakkımda' }
+    ] : [
+      { href: '/index.html', label: 'Home' },
+      { href: '/blog.html', label: 'Blog' },
+      { href: '/projects.html', label: 'Projects' },
+      { href: '/travels.html', label: 'My Travels' },
+      { href: '/about.html', label: 'About Me' }
+    ];
     // Language switch: direct counterpart where a Turkish page exists
-    // (index, about); otherwise Turkish home for now.
+    // (index, about, all three lists, and project details); for blog and
+    // travel details, whose Turkish versions come next, go to the Turkish
+    // section list instead of the Turkish home page.
     var langHref, langLabel;
-    if (current.indexOf('/tr/') === 0) {
+    if (isTrPage) {
       langHref = current.replace('/tr/', '/');
       langLabel = '🇺🇸 English';
-    } else if (current === '/index.html') {
-      langHref = '/tr/index.html';
+    } else if (current === '/index.html' || current === '/about.html' || current === '/projects.html' || current === '/blog.html' || current === '/travels.html' || current.indexOf('/projects/') === 0) {
+      langHref = '/tr' + current;
       langLabel = '🇹🇷 Türkçe';
-    } else if (current === '/about.html') {
-      langHref = '/tr/about.html';
+    } else if (current.indexOf('/blog/') === 0) {
+      langHref = '/tr/blog.html';
+      langLabel = '🇹🇷 Türkçe';
+    } else if (current.indexOf('/travels/') === 0) {
+      langHref = '/tr/travels.html';
       langLabel = '🇹🇷 Türkçe';
     } else {
       langHref = '/tr/index.html';
@@ -50,7 +62,7 @@
     nav.className = 'w-full';
     nav.innerHTML =
       '<div class="navbar bg-slate-800 text-white shadow-lg px-4">' +
-        '<div class="navbar-start"><a href="/index.html" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
+        '<div class="navbar-start"><a href="' + (isTrPage ? '/tr/index.html' : '/index.html') + '" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
         '<div class="navbar-end gap-2">' +
           '<a href="' + langHref + '" class="btn btn-outline text-white">' + langLabel + '</a>' +

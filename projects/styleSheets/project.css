@@ -44,5 +44,9 @@
     line-height: 1.6;
 }
 body {
-    background-color: #f4f4f4;
+    background-color: #f8fafc;
+}
+@media (max-width: 640px) {
+  .project-container { padding: 16px; margin: 24px auto; }
+  .project-images img { max-width: 100%; }
 }

@@ -19,6 +19,22 @@
   if (nav) {
     var current = window.location.pathname;
     if (current === '/') current = '/index.html';
+    // Language switch: direct counterpart where a Turkish page exists
+    // (index, about); otherwise Turkish home for now.
+    var langHref, langLabel;
+    if (current.indexOf('/tr/') === 0) {
+      langHref = current.replace('/tr/', '/');
+      langLabel = '🇺🇸 English';
+    } else if (current === '/index.html') {
+      langHref = '/tr/index.html';
+      langLabel = '🇹🇷 Türkçe';
+    } else if (current === '/about.html') {
+      langHref = '/tr/about.html';
+      langLabel = '🇹🇷 Türkçe';
+    } else {
+      langHref = '/tr/index.html';
+      langLabel = '🇹🇷 Türkçe';
+    }
     var items = links.map(function (link) {
       var active = current === link.href;
       var cls = active ? 'btn btn-primary' : 'btn btn-ghost text-white';
@@ -36,9 +52,12 @@
       '<div class="navbar bg-slate-800 text-white shadow-lg px-4">' +
         '<div class="navbar-start"><a href="/index.html" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
-        '<div class="navbar-end lg:hidden relative">' +
+        '<div class="navbar-end gap-2">' +
+          '<a href="' + langHref + '" class="btn btn-outline text-white">' + langLabel + '</a>' +
+          '<div class="lg:hidden relative">' +
           '<button class="btn btn-outline text-white js-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>' +
           '<div id="mobile-menu" class="hidden absolute right-0 top-full mt-2 w-56 bg-slate-800 rounded-box shadow-xl p-2 z-50">' + mobileItems + '</div>' +
+          '</div>' +
         '</div>' +
       '</div>';
     // Plain JS menu, no Daisy dropdown CSS involved: the focus-based

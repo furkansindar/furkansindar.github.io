@@ -1,0 +1,69 @@
+[
+  {
+    "section": "selected",
+    "title": "Sip Success Online",
+    "description": "An accessible, culturally aware website for my own bubble tea business in the Philippines, built with input from the Wisconsin Council of the Blind. It won 1st place at the 2024 Honors Competition, earned the Honors Medallion, and was presented at the 2025 Upper Midwest Honors Conference in Minneapolis.",
+    "tags": [
+      "Web Development",
+      "Accessibility",
+      "HTML/CSS/JavaScript"
+    ],
+    "link": "/projects/SipSuccess.html",
+    "image": "images/honorpresentation.jpeg",
+    "imageAlt": "sip success online project presentation"
+  },
+  {
+    "section": "selected",
+    "title": "AI-Powered EV Web App, Inborn GT Fellowship",
+    "description": "Product Manager for a cross-functional fellow team building an AI-powered EV web app for a simulated NYC dealership's EV division, from discovery through deployment over a 14-week cycle.",
+    "tags": [
+      "Product Management",
+      "AI Product",
+      "Figma",
+      "Asana"
+    ],
+    "link": "/projects/inborn.html",
+    "image": "projects/projectsimages/inborn/inborn-ev.png",
+    "imageAlt": "EV web app dashboard illustration"
+  },
+  {
+    "section": "selected",
+    "title": "Voice Command Assistant (n8n + GPT-4)",
+    "description": "A voice-command automation assistant built with n8n and GPT-4 that takes spoken instructions and acts on them, including managing email through the Gmail API.",
+    "tags": [
+      "Automation",
+      "n8n",
+      "GPT-4",
+      "Gmail API"
+    ],
+    "link": "/projects/voiceassistant.html",
+    "image": "/projects/projectsimages/voiceassistant/voice-assistant.png",
+    "imageAlt": "Voice assistant illustration"
+  },
+  {
+    "section": "selected",
+    "title": "AI Agent Assistant (Telegram + OpenAI)",
+    "description": "A personal AI assistant connected to OpenAI (4o mini via API) and deployed through Telegram. It supports both text and voice inputs (with transcription), and can perform basic productivity actions using Gmail and Google Calendar integrations with simple memory.",
+    "tags": [
+      "AI Agents",
+      "Telegram",
+      "OpenAI API",
+      "Gmail &amp; Calendar"
+    ],
+    "link": "/projects/firstagent.html",
+    "image": "/projects/projectsimages/aiagent/aiagent.png",
+    "imageAlt": "AI Agent workflow diagram showing Telegram trigger, transcription, OpenAI model, memory, Gmail, and Google Calendar tools"
+  },
+  {
+    "section": "leadership",
+    "title": "I Am Your Senator",
+    "description": "Born at the NACA Student Government Institute: personalized flyers with photos and QR codes linking to senators' blogs, pages, and emails, lowering the barrier between students and their representatives. Adopted by the Public Relations Committee and Executive Council as a permanent initiative.",
+    "tags": [
+      "Student Government",
+      "Advocacy"
+    ],
+    "link": "/projects/ImYourSenator.html",
+    "image": "projects/projectsimages/iamyoursenator/FurkanFlyer.jpg",
+    "imageAlt": "I Am Your Senator flyer"
+  }
+]

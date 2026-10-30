@@ -21,7 +21,7 @@
     if (current === '/') current = '/index.html';
     var items = links.map(function (link) {
       var active = current === link.href;
-      var cls = active ? 'btn btn-primary btn-sm' : 'btn btn-ghost btn-sm text-white';
+      var cls = active ? 'btn btn-primary' : 'btn btn-ghost text-white';
       var aria = active ? ' aria-current="page"' : '';
       return '<li><a href="' + link.href + '" class="' + cls + '"' + aria + '>' + link.label + '</a></li>';
     }).join('');
@@ -32,7 +32,7 @@
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
         '<div class="navbar-end lg:hidden">' +
           '<div class="dropdown dropdown-end">' +
-            '<div tabindex="0" role="button" class="btn btn-ghost text-white" aria-label="Open menu">Menu</div>' +
+            '<button class="btn btn-ghost text-white" aria-label="Open menu">Menu</button>' +
             '<ul tabindex="0" class="menu menu-sm dropdown-content bg-slate-800 rounded-box z-10 mt-3 w-52 p-2 shadow gap-1">' + items + '</ul>' +
           '</div>' +
         '</div>' +
@@ -46,6 +46,7 @@
       '<a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener" class="link link-hover text-white inline-flex items-center gap-2">Instagram' +
       '<img src="/images/Instagram_icon.png" alt="Instagram icon" width="20" height="20"></a>' +
       '<a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener" class="link link-hover text-white inline-flex items-center gap-2">Linkedin' +
-      '<img src="/images/linkedin.png" alt="Linkedin icon" width="20" height="20"></a>';
+      '<img src="/images/linkedin.png" alt="Linkedin icon" width="20" height="20"></a>' +
+      '<a href="https://github.com/furkansindar" target="_blank" rel="noopener" class="link link-hover text-white">GitHub</a>';
   }
 })();

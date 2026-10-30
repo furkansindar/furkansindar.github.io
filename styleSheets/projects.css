@@ -91,3 +91,19 @@ main {
 .read-more:active {
   transform: translateY(1px);
 }
+
+.main-content .section-heading {
+  grid-column: 1 / -1;
+  font-size: 24px;
+  color: #803c2c;
+  margin: 16px 0 0 0;
+}
+
+.text p.tags {
+  font-size: 13px;
+  color: #a44a35;
+  font-weight: 600;
+  flex-grow: 0;
+  display: block;
+  overflow: visible;
+}

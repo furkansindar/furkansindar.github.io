@@ -16,16 +16,16 @@
     // Nav labels: Turkish on tr/ pages, English elsewhere.
     var links = isTrPage ? [
       { href: '/tr/', label: 'Anasayfa' },
-      { href: '/tr/blog.html', label: 'Blog' },
       { href: '/tr/projects.html', label: 'Projeler' },
-      { href: '/tr/travels.html', label: 'Gezilerim' },
-      { href: '/tr/about.html', label: 'Hakkımda' }
+      { href: '/tr/about.html', label: 'Hakkımda' },
+      { href: '/tr/blog.html', label: 'Blog' },
+      { href: '/tr/travels.html', label: 'Gezilerim' }
     ] : [
       { href: '/', label: 'Home' },
-      { href: '/blog.html', label: 'Blog' },
       { href: '/projects.html', label: 'Projects' },
-      { href: '/travels.html', label: 'My Travels' },
-      { href: '/about.html', label: 'About Me' }
+      { href: '/about.html', label: 'About Me' },
+      { href: '/blog.html', label: 'Blog' },
+      { href: '/travels.html', label: 'My Travels' }
     ];
     // Language switch: direct counterpart where a Turkish page exists
     // (index, about, all three lists, and project details); for blog and

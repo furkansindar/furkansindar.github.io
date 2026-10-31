@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="furkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog / Yorum Yönetim Sistemi (PHP)</title>
+    <meta name="description" content="Madison College ders projesi: ziyaretçilerin yorum gönderebildiği, kart olarak gösterildiği bir PHP ve MySQL blogu; temel kimlik doğrulaması arkasındaki yönetici sayfası, onay adımıyla yorumları inceler ve siler.">
+    <meta property="og:title" content="Blog / Yorum Yönetim Sistemi (PHP)">
+    <meta property="og:description" content="Madison College ders projesi: ziyaretçilerin yorum gönderebildiği, kart olarak gösterildiği bir PHP ve MySQL blogu; temel kimlik doğrulaması arkasındaki yönetici sayfası, onay adımıyla yorumları inceler ve siler.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:url" content="https://furkansindar.com/tr/projects/blogcomments.html">
+    <meta property="og:image" content="https://furkansindar.com/projects/projectsimages/madison/media-generation-blog-comments-0-1cac9c91-8e29-48f4-9d89-96031e8138e1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styleSheets/tailwind.css">
+</head>
+<body class="bg-base-200 text-slate-700 font-sans">
+    <a class="skip-link" href="#mainContent">İçeriğe atla</a>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Blog / Yorum Yönetim Sistemi</h1>
+        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
+    </header>
+
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl detail-projects">
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/madison/media-generation-blog-comments-0-1cac9c91-8e29-48f4-9d89-96031e8138e1.webp" width="1920" height="1280" alt="Blog / Yorum Yönetim Sistemi (PHP) çizimi">
+            </div>
+
+            <div class="project-description">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="badge badge-outline">PHP</span><span class="badge badge-outline">MySQL</span><span class="badge badge-outline">Bootstrap</span></div>
+                <p>Madison College ders projesi, Güz 2024.</p>
+                <h2>Ziyaretçilerin Yazabildiği, Yöneticinin Denetleyebildiği Bir Blog</h2>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Sorun</h3>
+<p>Bir blogun iki yanı olması gerekir: ziyaretçilerin katkı verebildiği herkese açık bir yan ve birinin gönderileri inceleyip kaldırabildiği bir yönetici yanı.</p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Yaklaşım</h3>
+<p>Herkese açık yanı PHP ve MySQL ile, Bootstrap ile biçimlendirerek oluşturdum ve gönderileri en yeniden başlayarak kartlar halinde gösterdim. Yönetici yanı HTTP Temel Kimlik Doğrulaması arkasında durur ve aynı gönderileri kullanır; silme işlemi iki adıma bölünür, böylece silme asla yanlışlıkla olmaz.</p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Ne yaptım</h3>
+<p>Ziyaretçiler bir başlık ve yorum gönderir, bunlar bir blog tablosunda saklanır ve Bootstrap kartları olarak gösterilir. Yönetici sayfası aynı gönderileri her kartta bir silme bağlantısıyla listeler; silme önce bir onay sayfasından geçer, sonra silmeyi gerçekleştiren bir form gönderimiyle tamamlanır. Bu, API odaklı diğer projelerin aksine gerçek bir kullanıcı arayüzü olan tek Madison PHP projesidir. Bu bir ders projesiydi, bu yüzden öğrenme projesi olarak sunuluyor, üretime hazır kod olarak değil.</p>
+
+            </div>
+        </section>
+        <nav class="flex flex-wrap gap-3 justify-between mt-10" aria-label="Sayfa gezintisi"><a href="/tr/projects.html" class="btn btn-outline">← Projelere Dön</a><a href="/tr/projects/hotelnatoma.html" class="btn btn-primary">Sonraki: Hotel Natoma →</a></nav>
+    </main>
+
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <script src="/components.js" defer></script>
+</body>
+</html>

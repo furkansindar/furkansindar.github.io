@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="furkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci REST API'si + Guzzle İstemcisi (PHP)</title>
+    <meta name="description" content="Madison College ders projesi: öğrenci kayıtları için bir PHP REST API'si ve ona karşı ekleme, okuma, güncelleme ve silme döngüsünün tamamını çalıştıran ayrı bir Guzzle istemcisi.">
+    <meta property="og:title" content="Öğrenci REST API'si + Guzzle İstemcisi (PHP)">
+    <meta property="og:description" content="Madison College ders projesi: öğrenci kayıtları için bir PHP REST API'si ve ona karşı ekleme, okuma, güncelleme ve silme döngüsünün tamamını çalıştıran ayrı bir Guzzle istemcisi.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:url" content="https://furkansindar.com/tr/projects/studentapi.html">
+    <meta property="og:image" content="https://furkansindar.com/projects/projectsimages/madison/media-generation-student-api-0-7d7c6c7e-ebaf-4df6-a4f1-6c18833f14c5.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styleSheets/tailwind.css">
+</head>
+<body class="bg-base-200 text-slate-700 font-sans">
+    <a class="skip-link" href="#mainContent">İçeriğe atla</a>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Öğrenci REST API'si + Guzzle İstemcisi</h1>
+        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
+    </header>
+
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl detail-projects">
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/madison/media-generation-student-api-0-7d7c6c7e-ebaf-4df6-a4f1-6c18833f14c5.webp" width="1920" height="1280" alt="Öğrenci REST API'si + Guzzle İstemcisi (PHP) çizimi">
+            </div>
+
+            <div class="project-description">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="badge badge-outline">PHP</span><span class="badge badge-outline">MySQL</span><span class="badge badge-outline">REST API</span><span class="badge badge-outline">Guzzle</span></div>
+                <p>Madison College ders projesi, Güz 2025.</p>
+                <h2>Önce API'yi Kur, Sonra Onu Kullan</h2>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Sorun</h3>
+<p>Öğrenci kayıtlarının başka programların kullanabileceği bir servise ihtiyacı vardı ve ders bu servisin iki yanını da öğretmek istiyordu: bir API oluşturmak ve bir API'yi kullanmak.</p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Yaklaşım</h3>
+<p>Servisi MySQL öğrenci tablosuna karşı PDO hazır ifadeleriyle PHP ile oluşturdum ve JSON döndürdüm. Sonra bu servisi çağırmak için Guzzle HTTP istemci kitaplığını kullanan ayrı bir PHP istemcisi yazdım.</p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">Ne yaptım</h3>
+<p>Servis, öğrenci oluşturmak için POST, tek bir öğrenciyi veya tüm öğrencileri JSON olarak okumak için GET, güncellemek için PUT ve silmek için DELETE destekler. İstemci döngünün tamamını baştan sona çalıştırır: öğrencileri listeler, kimliğe göre birini getirir, öğrenci oluşturur, o öğrenciyi siler, bir başkasını oluşturur, sonra günceller. İstemci, ders çalışması için beklendiği gibi yerel bir sunucu adresini gösterir. Görev API'sinin aksine bu serviste giriş adımı yok. Bu bir ders projesiydi, bu yüzden öğrenme projesi olarak sunuluyor, üretime hazır kod olarak değil.</p>
+
+            </div>
+        </section>
+        <nav class="flex flex-wrap gap-3 justify-between mt-10" aria-label="Sayfa gezintisi"><a href="/tr/projects.html" class="btn btn-outline">← Projelere Dön</a><a href="/tr/projects/blogcomments.html" class="btn btn-primary">Sonraki: Blog / Yorum Yönetim Sistemi (PHP) →</a></nav>
+    </main>
+
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <script src="/components.js" defer></script>
+</body>
+</html>

@@ -92,6 +92,23 @@
     }
   }
 
+  // List-page card search: filters cards by title/description text.
+  var searchInput = document.getElementById('card-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', function () {
+      var q = searchInput.value.toLowerCase();
+      var cards = document.querySelectorAll('article.card');
+      var shown = 0;
+      cards.forEach(function (c) {
+        var show = c.textContent.toLowerCase().indexOf(q) !== -1;
+        c.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      var empty = document.getElementById('card-search-empty');
+      if (empty) empty.classList.toggle('hidden', shown !== 0);
+    });
+  }
+
   if (footer) {
     footer.className = 'footer bg-slate-800 text-white items-center p-6 mt-12 justify-center gap-4';
     footer.innerHTML =

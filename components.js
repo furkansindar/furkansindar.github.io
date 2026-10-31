@@ -10,17 +10,18 @@
 
   if (nav) {
     var current = window.location.pathname;
-    if (current === '/') current = '/index.html';
+    if (current === '/index.html') current = '/';
+    if (current === '/tr/index.html') current = '/tr/';
     var isTrPage = current.indexOf('/tr/') === 0;
     // Nav labels: Turkish on tr/ pages, English elsewhere.
     var links = isTrPage ? [
-      { href: '/tr/index.html', label: 'Anasayfa' },
+      { href: '/tr/', label: 'Anasayfa' },
       { href: '/tr/blog.html', label: 'Blog' },
       { href: '/tr/projects.html', label: 'Projeler' },
       { href: '/tr/travels.html', label: 'Gezilerim' },
       { href: '/tr/about.html', label: 'Hakkımda' }
     ] : [
-      { href: '/index.html', label: 'Home' },
+      { href: '/', label: 'Home' },
       { href: '/blog.html', label: 'Blog' },
       { href: '/projects.html', label: 'Projects' },
       { href: '/travels.html', label: 'My Travels' },
@@ -34,17 +35,17 @@
     if (isTrPage) {
       langHref = current.replace('/tr/', '/');
       langLabel = '🇺🇸 English';
-    } else if (current === '/index.html' || current === '/about.html' || current === '/projects.html' || current === '/blog.html' || current === '/travels.html' || current.indexOf('/projects/') === 0) {
-      langHref = '/tr' + current;
+    } else if (current === '/' || current === '/index.html' || current === '/about.html' || current === '/projects.html' || current === '/blog.html' || current === '/travels.html' || current.indexOf('/projects/') === 0) {
+      langHref = (current === '/' ? '/tr/' : '/tr' + current);
       langLabel = '🇹🇷 Türkçe';
     } else if (current.indexOf('/blog/') === 0) {
-      langHref = '/tr' + current;
+      langHref = (current === '/' ? '/tr/' : '/tr' + current);
       langLabel = '🇹🇷 Türkçe';
     } else if (current.indexOf('/travels/') === 0) {
-      langHref = '/tr' + current;
+      langHref = (current === '/' ? '/tr/' : '/tr' + current);
       langLabel = '🇹🇷 Türkçe';
     } else {
-      langHref = '/tr/index.html';
+      langHref = '/tr/';
       langLabel = '🇹🇷 Türkçe';
     }
     var items = links.map(function (link) {
@@ -62,7 +63,7 @@
     nav.className = 'w-full';
     nav.innerHTML =
       '<div class="navbar bg-slate-800 text-white shadow-lg px-4">' +
-        '<div class="navbar-start"><a href="' + (isTrPage ? '/tr/index.html' : '/index.html') + '" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
+        '<div class="navbar-start"><a href="' + (isTrPage ? '/tr/' : '/') + '" class="btn btn-ghost text-xl normal-case text-white">Furkan Sindar</a></div>' +
         '<div class="navbar-center hidden lg:flex"><ul class="menu menu-horizontal px-1 gap-1">' + items + '</ul></div>' +
         '<div class="navbar-end gap-2">' +
           '<a href="' + langHref + '" class="btn btn-outline text-white">' + langLabel + '</a>' +

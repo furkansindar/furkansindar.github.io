@@ -19,7 +19,7 @@
     <a class="skip-link" href="#mainContent">İçeriğe atla</a>
     <header class="bg-slate-800 text-white shadow-lg">
         <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Yapay Zekâ Ajan Asistanı</h1>
-        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/index.html" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
+        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
     </header>
 
     <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl detail-projects">
@@ -33,12 +33,15 @@
 
                 <p>Yapay Zekâ Ajan Asistanı, Telegram üzerinden basit günlük görevleri otomatikleştirmek için oluşturduğum başlangıç seviyesinde kişisel bir yapay zekâ asistanı iş akışıdır. Amaç, metin ve sesli mesajları anlayabilen, akıllıca yanıt verebilen ve temel verimlilik eylemleri gerçekleştirebilen tek bir asistan oluşturmaktı.</p>
 
+                <h3 class="text-xl font-bold mt-6 mb-2">İş Akışı Nasıl Çalışıyor</h3>
                 <p>İş akışı, gelen mesajları dinleyen bir Telegram Trigger ile başlar. Bir Switch adımı, istekleri mesaj türüne göre yönlendirir. Metin mesajları doğrudan işlenirken, sesli mesajlar önce indirilir ve ardından bir transkripsiyon adımıyla metne dönüştürülür.</p>
 
                 <p>Edit Fields adımında normalleştirildikten sonra istek, OpenAI Chat Model'e (API üzerinden 4o mini) bağlı bir AI Agent tarafından işlenir. Ajan daha sonra yanıtı Telegram'a metin yanıtı olarak geri gönderir.</p>
 
+                <h3 class="text-xl font-bold mt-6 mb-2">Entegrasyonlar ve Hafıza</h3>
                 <p>Asistanı sohbetin ötesinde kullanışlı hâle getirmek için araç entegrasyonları bağladım: Gmail (birden fazla mesajı okuma ve e-posta gönderme) ve Google Calendar (etkinlikleri okuma ve etkinlik oluşturma). Ayrıca bağlamı korumak için Simple Memory ekledim; bu, daha tutarlı ve kişiselleştirilmiş etkileşimler sağlıyor.</p>
 
+                <h3 class="text-xl font-bold mt-6 mb-2">Oluşturduğu Temel</h3>
                 <p>Bu proje, yapılandırılmış komut işleme, daha güvenli izin kapsamları, daha zengin hafıza ve ek entegrasyonlar gibi daha gelişmiş yeteneklere genişletmek için bir temel oluşturuyor.</p>
             </div>
         </section>

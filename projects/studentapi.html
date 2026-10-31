@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="furkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student REST API + Guzzle Client (PHP)</title>
+    <meta name="description" content="A Madison College coursework project: a PHP REST API for student records, plus a separate Guzzle client that runs the full create, read, update, and delete cycle against it.">
+    <meta property="og:title" content="Student REST API + Guzzle Client (PHP)">
+    <meta property="og:description" content="A Madison College coursework project: a PHP REST API for student records, plus a separate Guzzle client that runs the full create, read, update, and delete cycle against it.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://furkansindar.com/projects/studentapi.html">
+    <meta property="og:image" content="https://furkansindar.com/projects/projectsimages/madison/media-generation-student-api-0-7d7c6c7e-ebaf-4df6-a4f1-6c18833f14c5.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styleSheets/tailwind.css">
+</head>
+<body class="bg-base-200 text-slate-700 font-sans">
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">Student REST API + Guzzle Client</h1>
+        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
+    </header>
+
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl detail-projects">
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/madison/media-generation-student-api-0-7d7c6c7e-ebaf-4df6-a4f1-6c18833f14c5.webp" width="1920" height="1280" alt="Student REST API + Guzzle Client (PHP) illustration">
+            </div>
+
+            <div class="project-description">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="badge badge-outline">PHP</span><span class="badge badge-outline">MySQL</span><span class="badge badge-outline">REST API</span><span class="badge badge-outline">Guzzle</span></div>
+                <p>Madison College coursework, Fall 2025.</p>
+                <h2>Build the API, Then Use It</h2>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">The problem</h3>
+<p>
+                    Student records needed a service that other programs could use, and the course wanted to teach both sides of that service: building an API and consuming one.
+                </p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">The approach</h3>
+<p>
+                    I built the service in PHP with PDO prepared statements against a MySQL student table, returning JSON. Then I wrote a separate client in PHP using Guzzle, the HTTP client library, to call that service.
+                </p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">What I built</h3>
+<p>
+                    The service supports POST to create a student, GET to read one student or all students as JSON, PUT to update, and DELETE to remove. The client runs through the whole cycle end to end: list students, fetch one by id, create a student, delete that student, create another, then update it. The client points at a local server address, as expected for coursework. Unlike the task API, this service has no login step. This was coursework, so it is presented as a learning project, not as production-ready code.
+                </p>
+
+            </div>
+        </section>
+        <nav class="flex flex-wrap gap-3 justify-between mt-10" aria-label="Page navigation"><a href="/projects.html" class="btn btn-outline">← Back to Projects</a><a href="/projects/blogcomments.html" class="btn btn-primary">Next: PHP Blog / Comment Management System →</a></nav>
+    </main>
+
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <script src="/components.js" defer></script>
+</body>
+</html>

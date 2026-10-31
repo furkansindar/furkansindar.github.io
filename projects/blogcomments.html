@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="furkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Blog / Comment Management System</title>
+    <meta name="description" content="A Madison College coursework project: a PHP and MySQL blog where visitors post comments shown as cards, and an admin page behind basic auth reviews and deletes them through a confirmation step.">
+    <meta property="og:title" content="PHP Blog / Comment Management System">
+    <meta property="og:description" content="A Madison College coursework project: a PHP and MySQL blog where visitors post comments shown as cards, and an admin page behind basic auth reviews and deletes them through a confirmation step.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://furkansindar.com/projects/blogcomments.html">
+    <meta property="og:image" content="https://furkansindar.com/projects/projectsimages/madison/media-generation-blog-comments-0-1cac9c91-8e29-48f4-9d89-96031e8138e1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styleSheets/tailwind.css">
+</head>
+<body class="bg-base-200 text-slate-700 font-sans">
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+    <header class="bg-slate-800 text-white shadow-lg">
+        <h1 class="text-3xl font-bold text-white text-center pt-6 pb-2">PHP Blog / Comment Management System</h1>
+        <nav aria-label="Main Menu" id="site-nav"><noscript><ul role="menubar" aria-label="Main Menu"><li role="none"><a href="/" role="menuitem" aria-label="Home">Home</a></li><li role="none"><a href="/blog.html" role="menuitem" aria-label="Blog">Blog</a></li><li role="none"><a href="/projects.html" role="menuitem" aria-label="Projects">Projects</a></li><li role="none"><a href="/travels.html" role="menuitem" aria-label="My Travels">My Travels</a></li><li role="none"><a href="/about.html" role="menuitem" aria-label="About Me">About Me</a></li></ul></noscript></nav>
+    </header>
+
+    <main id="mainContent" class="mx-auto px-4 py-8 max-w-7xl detail-projects">
+        <section class="project-container">
+            <div class="project-images">
+                <img src="/projects/projectsimages/madison/media-generation-blog-comments-0-1cac9c91-8e29-48f4-9d89-96031e8138e1.webp" width="1920" height="1280" alt="PHP Blog / Comment Management System illustration">
+            </div>
+
+            <div class="project-description">
+                <div class="flex flex-wrap gap-2 mb-4"><span class="badge badge-outline">PHP</span><span class="badge badge-outline">MySQL</span><span class="badge badge-outline">Bootstrap</span></div>
+                <p>Madison College coursework, Fall 2024.</p>
+                <h2>A Blog Visitors Can Post To, and an Admin Can Moderate</h2>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">The problem</h3>
+<p>
+                    A blog needs two sides: a public side where visitors can contribute, and an admin side where someone can review and remove posts.
+                </p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">The approach</h3>
+<p>
+                    I built the public side with PHP and MySQL, styled with Bootstrap, showing posts as cards newest first. The admin side sits behind HTTP Basic Auth and reuses the same posts, with deletion split into two steps so a delete is never accidental.
+                </p>
+
+                <h3 class="text-xl font-bold mt-6 mb-2">What I built</h3>
+<p>
+                    Visitors submit a title and a comment, stored in a blog table and shown as Bootstrap cards. The admin page lists the same posts with a delete link on each card; delete goes through a confirmation page first, then a form submission that performs the delete. This is the only Madison PHP project in the set with a real user interface, unlike the API-only projects. This was coursework, so it is presented as a learning project, not as production-ready code.
+                </p>
+
+            </div>
+        </section>
+        <nav class="flex flex-wrap gap-3 justify-between mt-10" aria-label="Page navigation"><a href="/projects.html" class="btn btn-outline">← Back to Projects</a><a href="/projects/hotelnatoma.html" class="btn btn-primary">Next: Hotel Natoma →</a></nav>
+    </main>
+
+    <footer id="site-footer" class="bg-slate-800 text-white p-6 mt-12 text-center"><noscript><a href="mailto:furkansindar33@gmail.com">furkansindar33@gmail.com</a><a href="https://www.instagram.com/furkan_sindar/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/furkan-sindar-065bb72b9/" target="_blank" rel="noopener">Linkedin</a></noscript></footer>
+    <script src="/components.js" defer></script>
+</body>
+</html>

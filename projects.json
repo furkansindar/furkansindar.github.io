@@ -55,6 +55,20 @@
     "imageAlt": "AI Agent workflow diagram showing Telegram trigger, transcription, OpenAI model, memory, Gmail, and Google Calendar tools"
   },
   {
+    "section": "selected",
+    "title": "Connected Care 2031",
+    "description": "A five-year AI vision for a regional healthcare network of 14 hospitals and 200 clinics: one connected system instead of four new tools, so nobody falls through the cracks.",
+    "tags": [
+      "AI Strategy",
+      "Healthcare",
+      "Case Study",
+      "Kyndryl AI Studio"
+    ],
+    "link": "/projects/connected-care-2031.html",
+    "image": "/projects/projectsimages/connected-care/connected-care-2031-cover.png",
+    "imageAlt": "Connected Care 2031 cover slide: Nobody falls through the cracks"
+  },
+  {
     "section": "leadership",
     "title": "I Am Your Senator",
     "description": "Born at the NACA Student Government Institute: personalized flyers with photos and QR codes linking to senators' blogs, pages, and emails, lowering the barrier between students and their representatives. Adopted by the Public Relations Committee and Executive Council as a permanent initiative.",
